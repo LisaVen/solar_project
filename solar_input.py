@@ -60,13 +60,13 @@ def parse_star_parameters(line, star):
                 a.append(line[:i+1])
                 line = line[i+1:]
     return a
-    star.R = a[1]
+    star.R = float(a[1])
     star.color = a[2]
-    star.m = a[3]
-    star.x = a[4]
-    star.y = a[5]
-    star.Vx = a[6]
-    star.Vy = a[7]
+    star.m = float(a[3])
+    star.x = float(a[4])
+    star.y = float(a[5])
+    star.Vx = float(a[6])
+    star.Vy = float(a[7])
     # FIXME: not done yet
 
 def parse_planet_parameters(line, planet):
@@ -94,13 +94,13 @@ def parse_planet_parameters(line, planet):
                 a.append(line[:i+1])
                 line = line[i+1:]
     return a
-    planet.R = a[1]
+    planet.R = float(a[1])
     planet.color = a[2]
-    planet.m = a[3]
-    planet.x = a[4]
-    planet.y = a[5]
-    planet.Vx = a[6]
-    planet.Vy = a[7]
+    planet.m = float(a[3])
+    planet.x = float(a[4])
+    planet.y = float(a[5])
+    planet.Vx = float(a[6])
+    planet.Vy = float(a[7])
     # FIXME: not done yet...
 
 
